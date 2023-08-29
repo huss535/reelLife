@@ -1,6 +1,7 @@
 import { Form} from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import {useState}  from 'react';
+import GenButton from '../components/GenButton';
 
 
 
@@ -12,7 +13,7 @@ const [firstName,setFirstName] = useState('');
 const [lastName,setLastName] = useState('');
 const [date,setDate] = useState('');
 const [gender,setGender] = useState('');
-const handleSubmit = (event:any) =>{
+const handleSubmit = (event?:any) =>{
 
 event.preventDefault()
 
@@ -62,8 +63,7 @@ Navigate("/preferences");
       </Form.Group>
 
         <br/><br/>
-        <Form.Control type='submit' value='Next Step'/>
-
+        <GenButton onClick={handleSubmit} text="Next Step" as="button" type="submit" />
 
       </Form>
     </>

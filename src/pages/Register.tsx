@@ -36,7 +36,7 @@ function Register() {
       if (errorCode === "auth/email-already-in-use") {
         handleShow("email in use");
       } else if (errorCode === "auth/weak-password") {
-        handleShow("Bitch password");
+        handleShow("Bad password, please try again");
       } else {
         handleShow("Something else is going on here !");
       }

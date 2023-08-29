@@ -5,11 +5,7 @@
   padding: 2rem;
   text-align: center;
 }
-body{
 
-  background-image: url(./assets/cornered-stairs.svg);
-  background-size: cover;
-}
 
 .logo {
   height: 6em;
